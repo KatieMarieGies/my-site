@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      :root {
+        --primary-site-color: blueviolet;
+        --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        --border: 1px solid blueviolet;
+      }
+      h2 {
+        color: var(--primary-site-color);
+      }
+
+      h3 {
+        border: var(--border);
+      }
+      p {
+        background: var(--primary-site-color);
+        color: white;
+        box-shadow: var(--box-shadow);
+      }
+    </style>
   </head>
   <body>
     <h1>About me</h1>
+    <div id="faq">FAQ</div>
+    <h2>Contact</h2>
+    <h3>Phone</h3>
+    <h3>Email</h3>
+    <p>Feel free to reach out!</p>
+    <a href="index.html"> Home </a>
   </body>
 </html>
