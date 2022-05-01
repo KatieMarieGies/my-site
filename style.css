@@ -87,14 +87,8 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 629px) {
-  img#mobileview {
+@media (max-width: 576px) {
+  .desktop-logo {
     display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  h2 {
-    text-align: center;
   }
 }
