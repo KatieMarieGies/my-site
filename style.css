@@ -88,7 +88,12 @@ p {
 }
 
 @media (max-width: 576px) {
-  .desktop-logo {
-    display: none;
+  h2 {
+    text-align: center;
+    display: block;
+  }
+  p {
+    text-align: center;
+    display: block;
   }
 }
