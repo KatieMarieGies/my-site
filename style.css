@@ -97,3 +97,10 @@ p {
     display: block;
   }
 }
+
+@media (max-width: 576px) {
+  .linkbutton {
+    text-align: center;
+    display: block;
+  }
+}
