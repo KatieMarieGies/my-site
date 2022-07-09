@@ -4,26 +4,183 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .orgs {
-        display: flex;
-        justify-content: space-evenly;
-      }
+    <title>SheCodes Portfolio</title>
 
-      .org {
-        border: 1px solid blueviolet;
-        padding: 20px;
-        width: 33.3%;
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>My work</h1>
-    <a href="index.html"> Home </a>
-    <div class="orgs">
-      <div class="org">Shopify</div>
-      <div class="org">Ross</div>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="images/KatieLogo.png"
+            class="logo d-none d-md-block"
+            alt="Katie Logo"
+          />
+          <img
+            src="images/KatieLogo.png"
+            class="logo d-block d-md-none"
+            alt="Katie Logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Katie"> About</a>
+          </li>
+          <li class="active">
+            <a href="/work.html" title="Katie's Work"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Katie"> Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+    <div class="content-container container">
+      <div class="content">
+        <h1 class="mb-5">These are the organizations I've been forunate enough to support professionally!</h1>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <img
+              src="images/yogurt.png"
+              class="img-fluid mb-3 rounded"
+              alt="Algonquin College"
+            />
+            <h3 class="text-center m-0">Algonquin College</h3>
+            <h4>Professor</h4>
+            <p class="text-center text-muted">
+              I work as a part time professor of communications for the School of Business.
+            </p>
+            <div class="text-center mt-4 mb-5">
+              <a
+                href="https://www.algonquincollege.com/business/"
+                class="btn-branding"
+                target="_blank"
+                >Visit AC</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img
+              src="images/shopify.png"
+              class="img-fluid mb-3 rounded"
+              alt="Shopify logo"
+            />
+            <h3 class="text-center m-0">Shopify</h3>
+            <h4>Technical Writer</h4>
+            <p class="text-center text-muted">
+              Built using HTML, an active API, and advanced CSS and JavaScript
+            </p>
+            <div class="text-center mt-4 mb-5">
+              <a
+                href="https://www.weather.shecodes.io/"
+                class="btn-branding"
+                target="_blank"
+                >Visit Shopify</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img
+              src="images/ross.png"
+              class="img-fluid mb-3 rounded"
+              alt="Disctionary project preview"
+            />
+            <h3 class="text-center m-0">Ross Video</h3>
+            <h4>Technical Writer</h4>
+            <p class="text-center text-muted">
+              My technical writing journey began at Ross Video, and I am immensely proud of all the work that organization does. 
+            </p>
+            <div class="text-center mt-4 mb-5">
+              <a
+                href="https://www.dictionary.shecodes.io/"
+                class="btn-branding"
+                target="_blank"
+                >Visit Ross Video</a
+              >
+            </div>
+          </div>
+            <div class="text-center mt-4 mb-5">
+              <a
+                href="https://www.paxstaffin.com"
+                class="btn-branding-outline"
+                target="_blank"
+                disabled
+                >Coming soon</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="btn btn-branding mt-3"
+            title="Contact Katie"
+          >
+            Contact me
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a
+          href="mailto:katiemariegies@gmail.com"
+          class="email-link"
+          title="Email Katie"
+        >
+          KatieMarieGies@gmail.com
+        </a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://github.com/KatieMarieGies"
+          target="_blank"
+          title="Katie's GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p class="text-center mt-5">
+        ✌️ This website was coded by Katie Gies, and is
+        <a
+          href="https://github.com/matthieua/portfolio-project"
+          target="_blank"
+        >
+          open-sourced
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
