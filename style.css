@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: #ea7070;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -34,6 +34,10 @@ p {
   line-height: 1.5;
 }
 
+a:hover {
+  color: #2a3166;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -52,6 +56,7 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  display: block;
 }
 
 .about-link {
@@ -90,7 +95,18 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
+  background: #ea7070;
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.launch-buttons-2 {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  background: #ea7070;
   box-shadow: var(--box-shadow);
   color: white;
 }
@@ -102,4 +118,12 @@ p {
     text-align: center;
     display: block;
   }
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
