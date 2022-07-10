@@ -304,11 +304,12 @@ nav li.active a {
 
 header {
   position: relative;
-  background-color: white;
-  height: 55vh;
+  background-color: rgb(10, 10, 10);
+  height: 80vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 header video {
