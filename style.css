@@ -302,7 +302,7 @@ nav li.active a {
 /* video banner
 */
 
-header {
+header1 {
   position: relative;
   background-color: rgb(10, 10, 10);
   height: 80vh;
@@ -424,15 +424,44 @@ header .overlay {
 
 .hero {
   background: var(--secondary-color);
+  background-image: url("/images/3paint.png");
+  background-size: cover;
+  background-color: #cccccc;
+  height: 300px;
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   position: relative;
   background-color: rgb(10, 10, 10);
-  height: 80vh;
+  height: 50vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
   border-radius: 25px;
   object-fit: cover;
   z-index: -1;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+  border: 2px solid #000;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
