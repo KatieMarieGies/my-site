@@ -8,7 +8,7 @@
 
 body {
   margin: 60px auto;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 h1,
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .navigation-links a {
-  margin: 20px;
+  margin: 10px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -104,7 +104,7 @@ a:hover {
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 400px) {
   .sidenav {
     padding-top: 15px;
     --default-font-family: "Poppins", sans-serif;
@@ -116,7 +116,7 @@ a:hover {
 }
 
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 nav ul {
@@ -234,6 +234,12 @@ nav li.active a {
   max-height: 40px;
 }
 
+.resize {
+  width: 140px;
+  height: auto;
+  display: inline-block;
+}
+
 .email-link {
   display: flex;
   justify-content: center;
@@ -264,11 +270,12 @@ nav li.active a {
   background: #ea7070;
   box-shadow: var(--box-shadow);
   color: white;
+  margin-bottom: 40px;
 }
 .left-heading {
   text-align: left;
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .launch-buttons {
     text-align: center;
     display: block;
@@ -297,7 +304,7 @@ nav li.active a {
 
 header {
   position: relative;
-  background-color: black;
+  background-color: white;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -330,7 +337,7 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: white;
   opacity: 0.5;
   z-index: 1;
 }
@@ -348,4 +355,67 @@ header .overlay {
   header video {
     display: none;
   }
+}
+
+.centre {
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/* form */
+
+.contact-form {
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+.contact-form .form-control {
+  border-radius: 1rem;
+}
+.contact-image {
+  text-align: center;
+}
+.contact-image img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form {
+  padding: 14%;
+}
+.contact-form form .row {
+  margin-bottom: -7%;
+}
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
 }
