@@ -62,57 +62,10 @@ a:hover {
   text-transform: capitalize;
   --default-font-family: "Poppins", sans-serif;
 }
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  --default-font-family: "Poppins", sans-serif;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  --default-font-family: "Poppins", sans-serif;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  --default-font-family: "Poppins", sans-serif;
-}
 
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
-}
-
-@media screen and (max-height: 400px) {
-  .sidenav {
-    padding-top: 15px;
-    --default-font-family: "Poppins", sans-serif;
-  }
-  .sidenav a {
-    font-size: 18px;
-    --default-font-family: "Poppins", sans-serif;
-  }
 }
 
 nav {
@@ -302,13 +255,14 @@ nav li.active a {
 /* video banner
 */
 
-header {
+header1 {
   position: relative;
-  background-color: white;
-  height: 55vh;
+  background-color: rgb(10, 10, 10);
+  height: 80vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 header video {
@@ -419,4 +373,84 @@ header .overlay {
 .img-container {
   display: flex;
   justify-content: center;
+}
+
+.hero {
+  background: var(--secondary-color);
+  background-image: url("/images/3paint.png");
+  background-size: cover;
+  background-color: #cccccc;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  background-color: rgb(10, 10, 10);
+  height: 50vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+  object-fit: cover;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero p {
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.916);
+  opacity: 0.9;
+  display: block;
+  width: 100%;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 10vw;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.centered-element {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+  border: 2px solid #000;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
 }
