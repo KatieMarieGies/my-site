@@ -380,7 +380,8 @@ header .overlay {
   background-image: url("/images/3paint.png");
   background-size: cover;
   background-color: #cccccc;
-  height: 300px;
+  height: auto;
+  width: 100%;
   text-align: center;
   padding: 60px 20px;
   position: relative;
