@@ -421,3 +421,18 @@ header .overlay {
   display: flex;
   justify-content: center;
 }
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  background-color: rgb(10, 10, 10);
+  height: 80vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+  object-fit: cover;
+  z-index: -1;
+}
