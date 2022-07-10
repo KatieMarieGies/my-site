@@ -438,7 +438,7 @@ header .overlay {
   overflow: hidden;
   border-radius: 25px;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero p {
@@ -457,6 +457,26 @@ header .overlay {
   font-size: 10vw;
   color: white;
   display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .hero p {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.916);
+    opacity: 0.85;
+    display: block;
+  }
+  .hero h2 {
+    padding-top: 25px;
+    font-family: var(--heading-font-family);
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 10vw;
+    color: white;
+    display: flex;
+  }
 }
 
 .centered-element {
