@@ -62,57 +62,10 @@ a:hover {
   text-transform: capitalize;
   --default-font-family: "Poppins", sans-serif;
 }
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  --default-font-family: "Poppins", sans-serif;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  --default-font-family: "Poppins", sans-serif;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  --default-font-family: "Poppins", sans-serif;
-}
 
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
-}
-
-@media screen and (max-height: 400px) {
-  .sidenav {
-    padding-top: 15px;
-    --default-font-family: "Poppins", sans-serif;
-  }
-  .sidenav a {
-    font-size: 18px;
-    --default-font-family: "Poppins", sans-serif;
-  }
 }
 
 nav {
@@ -439,6 +392,9 @@ header .overlay {
   border-radius: 25px;
   object-fit: cover;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero p {
@@ -448,6 +404,7 @@ header .overlay {
   color: rgba(255, 255, 255, 0.916);
   opacity: 0.85;
   display: block;
+  width: 100%;
 }
 
 .hero h2 {
@@ -457,26 +414,7 @@ header .overlay {
   font-size: 10vw;
   color: white;
   display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .hero p {
-    font-size: 3vw;
-    font-weight: bold;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.916);
-    opacity: 0.85;
-    display: block;
-  }
-  .hero h2 {
-    padding-top: 25px;
-    font-family: var(--heading-font-family);
-    font-weight: normal;
-    line-height: 1.5;
-    font-size: 10vw;
-    color: white;
-    display: flex;
-  }
+  width: 100%;
 }
 
 .centered-element {
