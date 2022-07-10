@@ -305,7 +305,7 @@ nav li.active a {
 header {
   position: relative;
   background-color: white;
-  height: 75vh;
+  height: 55vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
