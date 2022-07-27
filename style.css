@@ -387,13 +387,13 @@ header .overlay {
   background: var(--secondary-color);
   background-image: url("/images/3paint.png");
   background-size: cover;
-  background-color: #cccccc;
+  background-color: #f7f6f6;
   height: auto;
   width: 100%;
   text-align: center;
   padding: 60px 20px;
   position: relative;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(255, 255, 255);
   height: 50vh;
   min-height: 25rem;
   width: 100%;
